@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Landing from "./pages/landing/landing.jsx";
+import Signup from "./pages/signup/signup";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
         <Route
         path="*"
         element={<Landing />}
+        />
+        <Route
+        path="/signup"
+        element={<Signup />}
         />
           
         </>
