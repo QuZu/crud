@@ -11,14 +11,17 @@ function App() {
       <Routes>
         <>
         <Route
-        path="*"
+        path="/"
         element={<Landing />}
         />
         <Route
         path="/signup"
         element={<Signup />}
         />
-          
+       <Route
+        path="*"
+        element={<Landing />}
+        />
         </>
       </Routes>
     </React.Suspense>
